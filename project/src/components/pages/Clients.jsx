@@ -1,0 +1,124 @@
+import { useState } from 'react';
+import '../../index.css';
+import imgAlli from '../../assets/img/clients/alli-contabilidade.png';
+import imgMeca from '../../assets/img/clients/meca-importacoes.png';
+import imgLVC from '../../assets/img/clients/LVC.png';
+import { Helmet } from 'react-helmet';
+
+
+
+const Clients = () => {
+
+    const clientes = [
+        {
+            id: 1,
+            titulo: 'ALLI Contabilidade',
+            img: imgAlli,
+        },
+        {
+            id: 2,
+            titulo: 'Meca Importações',
+            img: imgMeca,
+        },
+        {
+            id: 3,
+            titulo: 'LVC Digital',
+            img: imgLVC,
+        }
+    ];
+    
+    const totalSlides = Math.ceil(clientes.length / 3);
+
+    const [slideClients, setSlideClients] = useState(0);
+
+    const nextSlide = () =>{
+        setSlideClients((prevSlide) => (prevSlide + 1) % totalSlides);
+    };
+    const prevSlide = () => {
+        setSlideClients((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
+    };
+
+
+    return (
+        <>
+        <Helmet>
+            <meta name="description" content="A Vierca Tech oferece soluções completas em desenvolvimento web, suporte e assistência técnica." />
+            <meta name="keywords" content="e-commerce, loja virtual, landing page, desenvolvedor frontend, desenvolvedor, sistemas web, SEO, marketing digital,front-end, desenvolvimento web, criação de sites, sistemas personalizados, vierca tech, viercatech, assistência técnica, suporte técnico, técnico de informática, manutenção, notebook, computador, manutenção de computador, manutenção de notebook, VierCa Tech" />
+            <meta name="robots" content="index, follow" />
+            <meta name="author" content="Vierca Tech" />
+
+            <meta property="og:title" content="VierCa Tech - Desenvolvimento Web e Assistência técnica" />
+            <meta property="og:description" content="Desenvolvemos sites, auxiliamos com manutenção de computadores e notebooks."/>
+            <meta property="og:image" content="https://viercatech.com.br/VierCa.png"/>
+            <meta property="og:url" content="https://viercatech.com.br/#nav-clients"/>
+            <meta property="og:type" content="website"/>
+
+            <meta name="twitter:card" content="summary_large_image"/>
+            <meta name="twitter:title" content="VierCa Tech - Desenvolvimento Web e Software"/>
+            <meta name="twitter:description" content="Desenvolvimento de sites personalizados para empresas e empreendedores, assistência técnica para empresas e pessoas físicas."/>
+            <meta name="twitter:image" content="https://viercatech.com.br/VierCa.png"/>
+
+            <meta name="google-site-verification" content="google-site-verification=y3pzV-PW9l3e2VkPTMg90i4fwP8_dR2qhqFfOno4gtE"/>
+            <link rel="canonical" href="https://viercatech.com.br"/>
+
+            {/* JSON-LD para Schema.org */}
+            <script type="application/ld+json">
+                {`
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "Vierca Tech",
+                    "url": "https://www.viercatech.com.br/#nav-clients",
+                    "logo": "https://www.viercatech.com.br/VierCa.png",
+                    "description": "A Vierca Tech oferece soluções completas em desenvolvimento web, suporte e assistência técnica.",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Travessa Antônio Alsima, 2",
+                        "addressLocality": "São Paulo",
+                        "addressRegion": "SP",
+                        "postalCode": "02321-030",
+                        "addressCountry": "BR"
+                    },
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+55 11 96738-1402",
+                        "contactType": "customer service",
+                        "availableLanguage": "Portuguese"
+                    },
+                    "sameAs": [
+                        "https://www.linkedin.com/company/106129417"
+                    ]
+                }
+                `}
+            </script>
+        </Helmet>
+        <article className="article-clients" id="nav-clients">
+            <section>
+                <div className="title-clients">
+                    <h2>Nossos clientes</h2>
+                </div>
+                <div className="content-clients">
+                    <div className="slide-clients">
+                        <div className="item-slide">
+                            {clientes.slice(slideClients * 3, slideClients * 3 + 3).map((cliente) => (
+                                
+                                    <img key={cliente.id} src={cliente.img} alt={cliente.titulo} title={cliente.titulo}/>
+
+                            ))}
+                        </div>
+                        <div className="title-slide">
+                            {clientes.slice(slideClients * 3, slideClients * 3 + 3).map((cliente) => (
+                                <h3 key={cliente}>{cliente.titulo}</h3>
+                            ))}
+                        </div>
+                        {/* <button onClick={prevSlide} className="prev-slide"><i className="mdi mdi-menu-left"></i></button>
+                        <button onClick={nextSlide} className="next-slide"><i className="mdi mdi-menu-right"></i></button>*/}
+                    </div>
+                </div>
+            </section>
+        </article>
+        </>
+    )
+}
+
+export default Clients;

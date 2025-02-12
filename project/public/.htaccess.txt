@@ -1,0 +1,25 @@
+# Habilitar mod_rewrite
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Redirecionamento de /sitemap.xml/ para /sitemap.xml
+    RewriteRule ^sitemap\.xml/$ /sitemap.xml [L,R=301]
+
+    # Regras para manter o suporte à SPA (Single Page Application)
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+
+    # Redirecionamento para _next (qualquer valor no parâmetro)
+    RewriteCond %{QUERY_STRING} _next=.+$
+    RewriteRule ^(.*)$ /obrigado [L,R=302]
+</IfModule>
+
+# Configurações para habilitar CORS (caso necessário)
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type"
+</IfModule>

@@ -1,0 +1,591 @@
+@media (orientation: portrait){
+    @media (min-width: 320px){
+        /* HEADER */
+        header .info-nav{
+            height: auto;
+            padding-top: 10px;
+        }
+        header .info-nav .div-info-nav{
+            height: auto;
+            justify-content: start;
+        }
+        header .info-nav .div-info-nav ul{
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        header .info-nav .div-info-nav ul li{
+            width: 80%;
+        }
+        header .info-nav .social-info-nav{
+            width: 20%;
+        }
+        header .info-nav .social-info-nav ul{
+            gap: 10px;
+            padding-right: unset;
+        }
+        header .info-nav .social-info-nav ul li{
+            width: 70px;
+        }
+        /* HEADER */
+        /* PÁGINA HOME */
+        .article-home{
+            height: auto;
+        }
+        .content-home{
+            flex-direction: column-reverse;   
+            height: auto;  
+            gap: 50px;
+            padding-bottom: 50px;       
+        }
+        .text-home{
+            width: 90%;
+            padding-left: 0px;
+        }
+        .text-home h1{
+            width: 100%;
+            height: auto;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0px;
+        }
+        .text-home h2{
+            font-size: 1.1rem;
+            padding-left: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-home span{
+            font-size: 3.5rem;
+        }
+
+
+        .slide-home{
+            width: 90%;
+        }
+        .slide-home .img-slide{
+            width: 90%;
+        }
+        /* PÁGINA HOME */
+
+        /* PÁGINA ABOUT */
+        .article-about{
+            height: auto;
+            padding-bottom: 50px;
+        }
+        .article-about section .title-about h2{
+            width: 90%;
+        }
+        .text-about{
+            padding-left: 0px;
+        }
+        .info-about{
+            flex-wrap: wrap;
+        }
+        .info-about .item-about{
+            width: 30%;
+        }
+        /* PÁGINA ABOUT */
+
+        /* PÁGINA SERVICES */
+        .article-services{
+            padding-bottom: 50px;
+        }
+        .content-services{
+            flex-direction: column;
+        }
+        .service-item{
+            width: 90%;
+        }
+        /* PÁGINA SERVICES */
+
+
+        /* PÁGINA CLIENTS */
+        .article-clients{
+            height: auto;
+            padding-bottom: 50px;
+        }
+        .content-clients .slide-clients{
+            width: 95%;
+            padding: 10px;
+        }
+        .content-clients .slide-clients .title-slide h3{
+            width: 30%;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        /* PÁGINA CLIENTS */
+
+        /* PÁGINA CONTATO */
+        .article-contact{
+            height: auto;
+            padding-bottom: 50px;
+        }
+        .content-contact{
+            justify-content: center;
+            flex-direction: column;
+            height: auto;
+        }
+        .content-contact .forms-contact{
+            width: 100%;
+        }
+        .content-contact .forms-contact form{
+            width: 95%;
+        }
+        .content-contact .info-contact{
+            width: 90%;
+        }
+        /* PÁGINA CONTATO */
+
+        /* FOOTER */
+        footer .footer-container{
+            padding-top: 100px;
+            flex-direction: column-reverse;
+        }
+        footer .footer-container .footer-column{
+            width: 100%;
+            height: auto;
+            justify-content: center;
+        }
+        footer .footer-container .footer-column .footer-logo{
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer .footer-container .footer-column .footer-text p{
+            text-align: center;
+        }
+
+        footer .footer-container .footer-rights{
+            padding-top: 20px;
+            height: auto;
+        }
+        footer .footer-container .footer-rights p{
+            width: 100%;
+        }
+        footer .footer-container .footer-rights small{
+            width: 100%;
+        }
+        /* FOOTER */
+
+    }
+    @media (min-width: 640px){        
+        .slide-home{
+            width: 75%;
+        }
+        .slide-home .img-slide{
+            width: 90%;
+        }
+    }
+    @media (max-width: 1024px){
+        .toggle-nav{
+          display: flex;
+          transition: 0.6s ease;
+        }
+        .toggle-nav.active{
+            background: #1e90ff;
+        }
+        .toggle-nav.active div{
+            background: #fff;
+        }
+        header nav .bar-nav .menu-mobile{
+          flex-direction: column;
+          position: absolute;
+          background: rgb(255,255,255);
+          background: linear-gradient(270deg, rgba(255,255,255,1) 87%, rgba(30,144,255,1) 100%);
+          box-shadow: 0 0 5px black;
+          top: calc(100% + 10px);
+          left: 0px;
+          right: 0px;
+          margin: 0 auto;
+          justify-content: center;
+          padding-left: unset;
+          z-index: 1000;
+          gap: 20px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          display: none;
+          transition: all 0.6s ease;
+        }
+        header nav .bar-nav .menu-mobile.active{
+          display: flex;
+        }      
+        header nav .bar-nav .menu-mobile li{
+          width: 50%;
+        }
+    }
+}
+@media (orientation: landscape){
+    @media (min-width: 320px){
+        /* HEADER */
+        header nav .bar-nav ul{
+            padding-left: unset;
+        }
+        header nav .bar-nav ul li{
+            width: 25%;
+            text-align: center;
+            line-height: 0.9;
+        }
+        header .info-nav .div-info-nav ul{
+            justify-content: start;
+        }
+        header .info-nav .div-info-nav ul li{
+            width: 45%;
+        }
+        /* HEADER */
+
+        /* HOME */
+        .article-home{
+            height: auto;
+        }
+        .text-home{
+            padding-top: unset;
+            padding-left: unset;
+        }
+        .text-home h1{
+            padding-left: 50px;
+            font-size: 1.5rem;
+        }
+        .text-home h2{
+            font-size: 1.1rem;
+            padding-left: 50px;
+        }
+        .text-home span{
+            font-size: 3rem;
+        }
+        /* HOME */
+
+        /* ABOUT */
+        .article-about{
+            height: auto;
+            padding-bottom: 50px;
+        }
+        .article-about section .title-about h2{
+            width: 50%;
+        }
+        .text-about{
+            padding-left: unset;
+        }
+        .info-about .item-about{
+            width: 25%;
+        }
+        /* ABOUT */
+
+        /* SERVICES */
+        .article-services{
+            padding-bottom: 50px;
+        }
+        .content-services{
+            flex-wrap: wrap ;
+        }
+        .service-item{
+            width: 40%;
+            height: 500px;
+        }
+        /* SERVICES */
+
+        /* CLIENTS */
+        .article-clients{
+            height: auto;
+            padding-bottom: 50px;
+        }
+        .article-clients section .title-clients h2{
+            width: 70%;
+        }
+        .content-clients .slide-clients{
+            width: 95%;
+        }
+        .content-clients .slide-clients .title-slide h3{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        /* CLIENTS */
+
+        /* CONTACT */
+        .article-contact{
+            height: auto;
+        }
+        .content-contact{
+            height: auto;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .content-contact .forms-contact{
+            width: 90%;
+        }
+        .content-contact .forms-contact form{
+            width: 100%;
+        }
+        .content-contact .info-contact{
+            width: 90%;
+        }
+        /* CONTACT */
+
+
+        /* FOOTER */
+        footer .footer-container{
+            padding-top: 50px;
+            flex-direction: column-reverse;
+            gap: 10px;
+        }
+        footer .footer-container .footer-column{
+            width: 100%;
+            height: auto;
+        }
+
+        footer .footer-container .footer-rights{
+            height: auto;
+        }
+        /* FOOTER */
+    }
+
+    @media (min-width: 1280px){
+        /* HEADER */
+        header nav .bar-nav ul{
+            padding-left: 100px;
+        }
+        header nav .bar-nav ul li{
+            width: 20%;
+            line-height: unset;
+            text-align: unset;
+        }
+        header .info-nav .div-info-nav ul{
+            justify-content: end;
+        }
+        header .info-nav .div-info-nav ul li{
+            width: 20%;
+        }
+        /* HEADER */
+
+        /* HOME */
+        .article-home{
+            height: 110vh;
+        }
+        .text-home{
+            padding-top: 100px;
+            padding-left: 50px;
+        }
+        .text-home h1{
+            padding-left: 100px;
+            font-size: 2.5rem;
+        }
+        .text-home h2{
+            font-size: 1.5rem;
+            padding-left: 100px;
+        }
+        .text-home span{
+            font-size: 5rem;
+        }
+        /* HOME */
+
+        /* ABOUT */
+        .article-about{
+            height: 110vh;
+            padding-bottom: unset;
+        }
+        .article-about section .title-about h2{
+            width: 20%;
+        }
+        .text-about{
+            padding-left: 50px;
+        }
+        .info-about .item-about{
+            width: 15%;
+        }
+        /* ABOUT */
+
+        /* SERVICES */
+        .article-services{
+            padding-bottom: unset;
+        }
+        .service-item{
+            width: 22%;
+            height: 450px;
+        }
+        /* SERVICES */
+
+        /* CLIENTS */
+        .article-clients{
+            height: 110vh;
+            padding-bottom: unset;
+        }
+        .article-clients section .title-clients h2{
+            width: 50%;
+        }
+        .content-clients .slide-clients{
+            width: 80%;
+        }
+        .content-clients .slide-clients .title-slide h3{
+            font-size: 1.5rem;
+        }
+        /* CLIENTS */
+
+        /* CONTACT */
+        .article-contact{
+            height: 110vh;
+        }
+        .content-contact{
+            height: auto;
+            justify-content: end;
+            flex-direction: row;
+        }
+        .content-contact .forms-contact{
+            width: 50%;
+        }
+        .content-contact .forms-contact form{
+            width: 80%;
+        }
+        .content-contact .info-contact{
+            width: 30%;
+        }
+        /* CONTACT */
+
+        /* FOOTER */
+        footer .footer-container{
+            flex-direction: row;
+            gap: 50px;
+            padding-top: unset;
+        }
+        footer .footer-container .footer-column{
+            width: 25%;
+            height: 300px;
+        }
+
+        footer .footer-container .footer-rights{
+            height: 50px;
+        }
+        /* FOOTER */
+    }
+    @media (min-width: 1560px){
+        /* HEADER */
+        header{
+            height: 180px;
+        }
+        header .info-nav{
+            height: 80px;
+        }
+        header nav{
+            height: 100px;
+        }
+        /* HEADER */
+
+        /* HOME */
+        .text-home h1{
+            font-size: 3rem;
+        }
+        .text-home h2{
+            font-size: 1.8rem;
+            padding-left: 100px;
+        }
+        .text-home span{
+            font-size: 6rem;
+        }
+        .slide-home .button-slide-home button{
+            width: 80px;
+            height: 80px;
+            font-size: 3.5rem;
+        }
+        /* HOME */
+
+        /* ABOUT */
+        .article-about section .title-about h2{
+            font-size: 3.5rem;
+        }
+        /* ABOUT */
+
+        /* SERVICES */
+        .article-services{
+            height: 110vh;
+        }
+        .article-services section .title-services h2{
+            font-size: 3.5rem;
+        }
+        .text-item-service h3{
+            font-size: 1.2rem;
+        }
+        .text-item-service ul{
+            font-size: 1rem;
+        }
+        /* SERVICES */
+
+        /* CLIENTS */
+        .article-clients section .title-clients h2{
+            font-size: 3.5rem;
+        }
+        /* CLIENTS */
+
+        /* CONTACT */
+        .article-contact section .title-contact h2{
+            font-size: 3.5rem;
+        }
+        /* CONTACT */
+    }
+    @media (min-width: 1920px){
+        /* HEADER */
+        header nav .logo-nav img{
+            width: 120px;
+            height: 120px;
+        }
+        /* HEADER */
+
+        /* HOME */
+        .text-home h1{
+            font-size: 4rem;
+        }
+        .text-home h2{
+            font-size: 2.3rem;
+        }
+        .text-home span{
+            font-size: 7rem;
+        }
+        .slide-home .img-slide{
+            width: 75%;
+        }
+        /* HOME */
+
+        /* ABOUT */
+        .article-about section .title-about h2{
+            font-size: 4rem;
+        }
+        .content-about{
+            gap: 50px;
+        }
+        .text-about p{
+            font-size: 1.3rem;
+        }
+        .info-about .item-about span{
+            font-size: 4rem;
+        }
+        .info-about .item-about h4{
+            font-size: 1.2rem;
+        }
+        /* ABOUT */
+
+        /* SERVICES */
+        .article-services section .title-services h2{
+            font-size: 4rem;
+        }
+        .text-item-service h3{
+            font-size: 1.4rem;
+        }
+        .text-item-service ul{
+            font-size: 1.1rem;
+        }
+        /* SERVICES */
+
+        /* CLIENTS */
+        .article-clients section .title-clients h2{
+            font-size: 4rem;
+        }
+        /* CLIENTS */
+
+        /* CONTACT */
+        .article-contact section .title-contact h2{
+            font-size: 4rem;
+        }
+        /* CONTACT */
+    }
+}
