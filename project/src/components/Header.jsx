@@ -16,7 +16,6 @@ const Header = () =>{
         setIsMobile(false);
     };
 
-
     return(
         <header>
 
