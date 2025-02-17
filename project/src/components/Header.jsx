@@ -29,7 +29,7 @@ const Header = () =>{
             scrollTrigger:{
                 trigger: ".article-home",
                 scrub: true,
-                markers: true,
+                //markers: true,
                 start: "top 100px",
                 end: "bottom 500px",
             }
