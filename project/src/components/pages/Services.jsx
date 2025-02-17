@@ -1,5 +1,6 @@
 import '../../index.css';
 import { Helmet } from 'react-helmet';
+import { gsap } from 'gsap';
 
 
 import item1 from '../../assets/img/services-page/item-service1.png';
@@ -8,6 +9,18 @@ import item3 from '../../assets/img/services-page/item-service3.png';
 import item4 from '../../assets/img/services-page/item-service4.png';
 
 const Services = () =>{
+    window.addEventListener("scroll", () => {
+        let sectionServ = document.querySelector(".article-services section");
+        let position = sectionServ.getBoundingClientRect().top;
+
+        if(position < window.innerHeight * 0.7){
+            gsap.to(".article-services section", {
+                opacity: 1,
+                x: 0,
+                duration: 1.5,
+            })
+        }
+    })
     return(
         <>
         <Helmet>

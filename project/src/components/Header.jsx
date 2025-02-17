@@ -1,6 +1,8 @@
 import '../index.css';
 import imgHeader from '../assets/img/VierCa-Tech-logo.png';
-import { useState } from 'react';
+import { useLayoutEffect , useState } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 
@@ -15,6 +17,24 @@ const Header = () =>{
     const closeMenu = () => {
         setIsMobile(false);
     };
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".info-nav",{
+            x: 0,
+            y: -100,
+            opacity: 0,
+            rotate: "0deg",
+            duration: 1,
+            scrollTrigger:{
+                trigger: ".article-home",
+                scrub: true,
+                markers: true,
+                start: "top 100px",
+                end: "bottom 500px",
+            }
+        });
+    })
 
     return(
         <header>

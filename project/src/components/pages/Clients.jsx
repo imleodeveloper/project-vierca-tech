@@ -4,6 +4,7 @@ import imgAlli from '../../assets/img/clients/alli-contabilidade.png';
 import imgMeca from '../../assets/img/clients/meca-importacoes.png';
 import imgLVC from '../../assets/img/clients/LVC.png';
 import { Helmet } from 'react-helmet';
+import { gsap } from 'gsap';
 
 
 
@@ -38,6 +39,18 @@ const Clients = () => {
         setSlideClients((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
     };
 
+    window.addEventListener("scroll", () => {
+        let sectionClients = document.querySelector(".article-clients");
+        let position = sectionClients.getBoundingClientRect().top;
+
+        if(position < window.innerHeight * 0.7){
+            gsap.to(".article-clients section", {
+                opacity: 1,
+                scale: 1,
+                duration: 1,
+            })
+        }
+    })
 
     return (
         <>

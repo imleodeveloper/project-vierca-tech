@@ -2,9 +2,10 @@ import '../../index.css';
 import ImgMeca from '../../assets/img/clients/site-meca.png';
 import ImgAlli from '../../assets/img/clients/site-alli.png';
 import ImgLeo from '../../assets/img/clients/site-leonardo.png';
-import { useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 const Home = () =>{
@@ -48,6 +49,24 @@ const Home = () =>{
             setEffectTransition(false); // Finaliza a transição
         }, 1000); // Tempo igual à duração da transição no CSS
     };
+
+    {/* ANIMAÇÕES */}
+    const forMedia = gsap.matchMedia();
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".slide-home, .text-home",{
+            x: 0,
+            y: 0,
+            opacity: 1,
+            rotate: "0deg",
+            duration: 1,
+            delay: 0.7,
+        });
+    })
+
+
+    {/* ANIMAÇÕES */}
 
     return(
         <>

@@ -11,6 +11,7 @@ body{
   background: linear-gradient(270deg, rgba(255,255,255,1) 86%, rgba(30,144,255,1) 100%);
   font-family: "Poppins", serif;
   scroll-behavior: smooth;
+  
 }
 
 main{
@@ -133,6 +134,7 @@ header nav .logo-nav{
   display: flex;
   justify-content: start;
   align-items: center;
+  z-index: 1000;
 }
 header nav .logo-nav img{
   width: 90px;
@@ -243,6 +245,7 @@ header nav .bar-nav ul li .link-nav:hover::after{
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .article-home::after{
   position: absolute;
@@ -273,6 +276,8 @@ header nav .bar-nav ul li .link-nav:hover::after{
   flex-direction: column;
   color: #fff;
   padding-left: 50px;
+  transform: translateX(100%) rotate(-45deg);
+  opacity: 0;
 }
 .text-home h1{
   width: 100%;
@@ -301,6 +306,8 @@ header nav .bar-nav ul li .link-nav:hover::after{
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateX(-100%) rotate(45deg);
+  opacity: 0;
 }
 .slide-home .img-slide{
   width: 85%;
@@ -368,6 +375,7 @@ header nav .bar-nav ul li .link-nav:hover::after{
   justify-content: center;
   align-items: center;
   background: #252525;
+  overflow: hidden;
 }
 .article-about section{
   width: 100%;
@@ -378,6 +386,9 @@ header nav .bar-nav ul li .link-nav:hover::after{
   align-items: center;
   padding-top: 100px;
   gap: 100px;
+  opacity: 0;
+  transform: translateX(30%) translateY(-30%);
+
 }
 .article-about section .title-about{
   width: 100%;
@@ -515,6 +526,8 @@ header nav .bar-nav ul li .link-nav:hover::after{
   align-items: center;
   padding-top: 50px;
   gap: 50px;
+  opacity: 0;
+  transform: translateX(-100%);
 }
 .article-services section .title-services{
   width: 100%;
@@ -640,6 +653,8 @@ header nav .bar-nav ul li .link-nav:hover::after{
   justify-content: center;
   align-items: center;
   gap: 50px;
+  opacity: 0;
+  transform: scale(0.3);
 }
 .article-clients section .title-clients{
   width: 100%;
@@ -762,6 +777,8 @@ header nav .bar-nav ul li .link-nav:hover::after{
   justify-content: center;
   align-items: center;
   gap: 50px;
+  transform: translateY(100%) scale(0.3);
+  opacity: 0;
 }
 .article-contact section .title-contact{
   width: 100%;

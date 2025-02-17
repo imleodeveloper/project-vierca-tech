@@ -1,7 +1,22 @@
 import '../../index.css';
 import { Helmet } from 'react-helmet';
+import { gsap } from 'gsap';
 
 const About = () => {
+    window.addEventListener("scroll", () => {
+        let sectionAbout = document.querySelector(".article-about section");
+        let position = sectionAbout.getBoundingClientRect().top;
+
+        if(position < window.innerHeight * 0.8){
+            gsap.to(".article-about section", {
+                opacity: 1,
+                y: 0,
+                x: 0,
+                duration: 3,
+            })
+        }
+    })
+
     return(
         <>
         <Helmet>

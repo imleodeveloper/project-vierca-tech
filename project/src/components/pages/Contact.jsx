@@ -2,6 +2,7 @@ import '../../index.css';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Helmet } from 'react-helmet';
+import { gsap } from 'gsap';
 
 const Contact = () => {
 
@@ -42,6 +43,21 @@ const Contact = () => {
 
         alert('Email enviado!','Obrigado pelo envio! Assim que possível entraremos em contato.')
     }
+
+    window.addEventListener("scroll", () => {
+        let sectionContact = document.querySelector(".article-contact");
+        let position = sectionContact.getBoundingClientRect().top;
+
+        if(position < window.innerHeight * 0.7){
+            gsap.to(".article-contact section", {
+                opacity: 1,
+                y: 1,
+                scale: 1,
+                duration: 2,
+                zIndex: 1,
+            })
+        }
+    })
 
     return (
         <>
