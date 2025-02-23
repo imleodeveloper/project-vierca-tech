@@ -7,6 +7,7 @@ import About from "./components/pages/About";
 import Clients from "./components/pages/Clients";
 import Services from "./components/pages/Services";
 import Contact from "./components/pages/Contact";
+import Privacidade from "./components/pages/Privacidade";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Services />
           <Clients />
           <Contact />
+          <Privacidade />
         </main>
       <Footer />
     </>

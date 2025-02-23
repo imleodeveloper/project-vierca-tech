@@ -1200,6 +1200,81 @@ footer .footer-container .footer-rights small{
 }
 /*********************************************** FOOTER *************************************************/
 
+/*********************************************** PRIVACIDADE *************************************************/
+.article-privacy{
+  width: 60%;
+  max-height: 500px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(37, 37, 37, 0.7);
+  backdrop-filter: blur(80px);
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  padding: 20px;
+  position: fixed;
+  top: 200px;
+  z-index: 1000;
+}
+.article-privacy button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #1e90ff;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.article-privacy button:hover{
+  background: #125eaa;
+}
+.article-privacy section{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 850px;
+}
+.article-privacy section h2{
+  font-size: 1.5rem;
+  width: 100%;
+  color: #1e90ff;
+  text-shadow: 
+    -1px -1px 0px black, 
+     1px -1px 0px black, 
+    -1px  1px 0px black, 
+     1px  1px 0px black;
+}
+.article-privacy section h3{
+  font-size: 1.2rem;
+  width: 100%;
+  color: #1e90ff;
+  text-shadow: 
+    -1px -1px 0px black, 
+     1px -1px 0px black, 
+    -1px  1px 0px black, 
+     1px  1px 0px black;
+  margin-top: 50px;
+}
+.article-privacy section p{
+  color: #fff;
+}
+.article-privacy section ul{
+  color: #fff;
+}
+/*********************************************** PRIVACIDADE *************************************************/
+
 /***************************** WEBKIT ************************************/
 /* Firefox e Opera */
 html {
