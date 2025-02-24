@@ -26,6 +26,7 @@ const Header = () =>{
             opacity: 0,
             rotate: "0deg",
             duration: 1,
+            display: "none",
             scrollTrigger:{
                 trigger: ".article-home",
                 scrub: true,

@@ -1,11 +1,20 @@
-import { useState } from "react";
+import { useState , useEffect } from "react";
+import logo from '../../assets/img/VierCaTech-SemNome-Fundo.png';
 
 
 const Privacidade = () =>{
 
-    const [isButtonClose, setButtonClose] = useState(true);
+    const [isButtonClose, setButtonClose] = useState(false);
 
-    const closeButton = () => {
+    useEffect(() => {   
+        const accepted = localStorage.getItem("privacidade_aceita")
+        if (!accepted){
+            setButtonClose(true);
+        }
+    }, []);
+
+    const acceptPolicy = () => {
+        localStorage.setItem("privacidade_aceita", "true");
         setButtonClose(false);
     }
 
@@ -14,8 +23,12 @@ const Privacidade = () =>{
         <>
             {isButtonClose && (
                 <article className="article-privacy">
-                    <button className="button-close-privacy" onClick={closeButton}>X</button>
+                    <div className="button-close-privacy">
+                        <button onClick={acceptPolicy}>Aceitar</button>
+                        <p>Ao aceitar você concorda com nossa política.</p>
+                    </div>
                     <section>
+                        <img src={logo} alt="Logo banner de privacidade - VierCa Tech" title="Assistência técnica e Webdesign na Vila Zilda" />
                         <h2>Política de Privacidade</h2>
                         <p>A sua privacidade é importante para nós. É política do <strong>VierCa Tech</strong> respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <strong>VierCa Tech</strong> e outros sites que possuímos e operamos.</p>
 

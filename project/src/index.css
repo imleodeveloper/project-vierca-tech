@@ -1203,29 +1203,38 @@ footer .footer-container .footer-rights small{
 /*********************************************** PRIVACIDADE *************************************************/
 .article-privacy{
   width: 60%;
-  max-height: 500px;
+  max-height: 80vh;
   overflow-y: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background: rgba(37, 37, 37, 0.7);
   backdrop-filter: blur(80px);
   box-shadow: 0 0 10px black;
   border-radius: 10px;
   padding: 20px;
   position: fixed;
-  top: 200px;
+  top: 50px;
   z-index: 1000;
 }
-.article-privacy button{
+.article-privacy .button-close-privacy{
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 30px;
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  z-index: 1;
+}
+.article-privacy .button-close-privacy button{
+  width: 50%;
   height: 30px;
   border: none;
   background: #1e90ff;
-  color: #000000;
+  color: #fff;
   font-weight: bold;
   font-size: 1rem;
   border-radius: 10px;
@@ -1233,10 +1242,20 @@ footer .footer-container .footer-rights small{
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 1;
 }
-.article-privacy button:hover{
+.article-privacy .button-close-privacy button:hover{
   background: #125eaa;
 }
+.article-privacy .button-close-privacy p{
+  width: 100%;
+  height: auto;
+  text-align: end;
+  color: #fff;
+  font-size: 1rem;
+}
+
+
 .article-privacy section{
   width: 100%;
   height: auto;
@@ -1244,7 +1263,10 @@ footer .footer-container .footer-rights small{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 850px;
+  position: relative;
+}
+.article-privacy section img{
+  width: 20%;
 }
 .article-privacy section h2{
   font-size: 1.5rem;
