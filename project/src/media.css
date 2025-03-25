@@ -117,6 +117,9 @@
             font-size: 0.8rem;
             text-align: center;
         }
+        .content-clients .slide-clients .item-slide .img-slide{
+            width: 90%;
+        }
         /* PÁGINA CLIENTS */
 
         /* PÁGINA CONTATO */
@@ -195,6 +198,11 @@
         }
         .slide-home .img-slide{
             width: 90%;
+        }
+
+
+        .content-clients .slide-clients .item-slide .img-slide{
+            width: 40%;
         }
     }
     @media (max-width: 1024px){
@@ -315,9 +323,8 @@
         .content-clients .slide-clients{
             width: 95%;
         }
-        .content-clients .slide-clients .title-slide h3{
-            text-align: center;
-            font-size: 1.2rem;
+        .content-clients .slide-clients .item-slide .img-slide{
+            
         }
         /* CLIENTS */
 

@@ -3,6 +3,8 @@ import '../../index.css';
 import imgAlli from '../../assets/img/clients/alli-contabilidade.png';
 import imgMeca from '../../assets/img/clients/meca-importacoes.png';
 import imgLVC from '../../assets/img/clients/LVC.png';
+import imgLustra from '../../assets/img/clients/lustra-omega.png';
+import imgRx from '../../assets/img/clients/rx-consultoria.png';
 import { Helmet } from 'react-helmet';
 import { gsap } from 'gsap';
 
@@ -15,17 +17,33 @@ const Clients = () => {
             id: 1,
             titulo: 'ALLI Contabilidade',
             img: imgAlli,
+            site: 'https://www.allicontabilidade.com.br',
         },
         {
             id: 2,
             titulo: 'Meca Importações',
             img: imgMeca,
+            site: 'https://www.mecaimportacoes.com.br',
         },
         {
             id: 3,
             titulo: 'LVC Digital',
             img: imgLVC,
-        }
+            site: 'https://lvcdigital.netlify.app/',
+        },
+        {
+            id: 4,
+            titulo: 'RX Consultoria',
+            img: imgRx,
+            site: 'https://www.rxconsultoria.com.br',
+        },
+        {
+            id: 5,
+            titulo: 'Lustra Ômega',
+            img: imgLustra,
+            site: 'https://www.lustraomega.com.br',
+        },
+
     ];
     
     const totalSlides = Math.ceil(clientes.length / 3);
@@ -113,15 +131,11 @@ const Clients = () => {
                 <div className="content-clients">
                     <div className="slide-clients">
                         <div className="item-slide">
-                            {clientes.slice(slideClients * 3, slideClients * 3 + 3).map((cliente) => (
-                                
-                                    <img key={cliente.id} src={cliente.img} alt={cliente.titulo} title={cliente.titulo}/>
-
-                            ))}
-                        </div>
-                        <div className="title-slide">
-                            {clientes.slice(slideClients * 3, slideClients * 3 + 3).map((cliente) => (
-                                <h3 key={cliente}>{cliente.titulo}</h3>
+                            {clientes.slice(slideClients * 5, slideClients * 5 + 5).map((cliente) => (
+                                <div key={cliente.id} className='img-slide'>
+                                    <img src={cliente.img} alt={cliente.titulo} title={cliente.titulo}/>
+                                    <a href={cliente.site} target="_blank" rel="noopener noreferrer"><span>{cliente.titulo}</span></a>
+                                </div>
                             ))}
                         </div>
                         {/* <button onClick={prevSlide} className="prev-slide"><i className="mdi mdi-menu-left"></i></button>
