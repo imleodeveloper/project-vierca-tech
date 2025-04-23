@@ -1,5 +1,5 @@
 import '../index.css';
-import imgFooter from '../assets/img/VierCa-Tech-logo.png';
+import imgFooter from '../assets/img/VierCaTech-SemNome-Fundo.webp';
 
 
 const Footer = () =>{
@@ -8,7 +8,7 @@ const Footer = () =>{
             <div className="footer-container">
                 <div className="footer-column">
                     <div className="footer-logo">
-                        <img src={imgFooter} alt="Logo LVC Digital - Footer" title="Logo LVC Digital - Footer"/>
+                        <img src={imgFooter} alt="Logo VierCa Tech - Footer" title="Logo VierCa Tech - Footer"/>
                     </div>
                     <div className="footer-text">
                         <p>Tecnologia e inovação para impulsionar seu negócio com inteligência.</p>

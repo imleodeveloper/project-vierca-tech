@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet';
 import { gsap } from 'gsap';
 
 
-import item1 from '../../assets/img/services-page/item-service1.png';
-import item2 from '../../assets/img/services-page/item-service2.png';
-import item3 from '../../assets/img/services-page/item-service3.png';
-import item4 from '../../assets/img/services-page/item-service4.png';
+import item1 from '../../assets/img/services-page/item-service1.webp';
+import item2 from '../../assets/img/services-page/item-service2.webp';
+import item3 from '../../assets/img/services-page/item-service3.webp';
+import item4 from '../../assets/img/services-page/item-service4.webp';
 
 const Services = () =>{
     window.addEventListener("scroll", () => {
@@ -98,7 +98,7 @@ const Services = () =>{
                             </div>
                         </div>
                         <div className="img-item-service">
-                            <img src={item1} alt="Imagem Item - Tráfego pago" title="Imagem Item - Tráfego pago" />
+                            <img src={item1} alt="Imagem Item - Suporte técnico" title="Imagem Item - Suporte técnico" />
                         </div>
                     </div>
                     <div className="service-item">
@@ -159,7 +159,7 @@ const Services = () =>{
                             </div>
                         </div>
                         <div className="img-item-service">
-                            <img src={item4} alt="Teste" title="Testee" />
+                            <img src={item4} alt="Imagem item - Tráfego pago" title="Imagem item - Tráfego pago" />
                         </div>
                     </div>
                 </div>

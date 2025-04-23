@@ -1,5 +1,5 @@
 import { useState , useEffect } from "react";
-import logo from '../../assets/img/VierCaTech-SemNome-Fundo.png';
+import logo from '../../assets/img/VierCaTech-SemNome-Fundo.webp';
 
 
 const Privacidade = () =>{

@@ -1,7 +1,7 @@
 import '../../index.css';
-import ImgMeca from '../../assets/img/clients/site-meca.png';
-import ImgAlli from '../../assets/img/clients/site-alli.png';
-import ImgLeo from '../../assets/img/clients/site-leonardo.png';
+import ImgMeca from '../../assets/img/clients/site-meca.webp';
+import ImgAlli from '../../assets/img/clients/site-alli.webp';
+import ImgLeo from '../../assets/img/clients/site-leonardo.webp';
 import { useLayoutEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { gsap } from 'gsap';

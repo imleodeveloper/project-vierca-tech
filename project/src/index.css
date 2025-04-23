@@ -254,7 +254,7 @@ header nav .bar-nav ul li .link-nav:hover::after{
   width: 100%;
   top: 0px;
   left: 0px;  
-  background: url('./assets/img/home-section.jpg') no-repeat center center;
+  background: url('./assets/img/home-section.webp') no-repeat center center;
   background-size: cover;
   filter: brightness(40%);
   z-index: -1;

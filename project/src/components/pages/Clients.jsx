@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import '../../index.css';
-import imgAlli from '../../assets/img/clients/alli-contabilidade.png';
-import imgMeca from '../../assets/img/clients/meca-importacoes.png';
-import imgLVC from '../../assets/img/clients/LVC.png';
-import imgLustra from '../../assets/img/clients/lustra-omega.png';
-import imgRx from '../../assets/img/clients/rx-consultoria.png';
+import imgAlli from '../../assets/img/clients/alli-contabilidade.webp';
+import imgMeca from '../../assets/img/clients/meca-importacoes.webp';
+import imgLVC from '../../assets/img/clients/LVC.webp';
+import imgLustra from '../../assets/img/clients/lustra-omega.webp';
+import imgRx from '../../assets/img/clients/rx-consultoria.webp';
 import { Helmet } from 'react-helmet';
 import { gsap } from 'gsap';
 
@@ -18,30 +18,35 @@ const Clients = () => {
             titulo: 'ALLI Contabilidade',
             img: imgAlli,
             site: 'https://www.allicontabilidade.com.br',
+            target: '_blank',
         },
         {
             id: 2,
             titulo: 'Meca Importações',
             img: imgMeca,
             site: 'https://www.mecaimportacoes.com.br',
+            target: '_blank',
         },
         {
             id: 3,
-            titulo: 'LVC Digital',
+            titulo: 'Em desenvolvimento',
             img: imgLVC,
-            site: 'https://lvcdigital.netlify.app/',
+            site: '#nav-clients',
+            target: '',
         },
         {
             id: 4,
             titulo: 'RX Consultoria',
             img: imgRx,
             site: 'https://www.rxconsultoria.com.br',
+            target: '_blank',
         },
         {
             id: 5,
             titulo: 'Lustra Ômega',
             img: imgLustra,
             site: 'https://www.lustraomega.com.br',
+            target: '_blank',
         },
 
     ];
@@ -134,7 +139,7 @@ const Clients = () => {
                             {clientes.slice(slideClients * 5, slideClients * 5 + 5).map((cliente) => (
                                 <div key={cliente.id} className='img-slide'>
                                     <img src={cliente.img} alt={cliente.titulo} title={cliente.titulo}/>
-                                    <a href={cliente.site} target="_blank" rel="noopener noreferrer"><span>{cliente.titulo}</span></a>
+                                    <a href={cliente.site} target={cliente.target} rel="noopener noreferrer"><span>{cliente.titulo}</span></a>
                                 </div>
                             ))}
                         </div>

@@ -175,24 +175,24 @@ const Contact = () => {
                     <div className="info-contact">
                         <div>
                             <a href="https://api.whatsapp.com/send/?phone=5511967381402&text=Ol%C3%A1%20VierCa%20Tech,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-                                <i className="mdi mdi-whatsapp"></i>
+                                <i className="mdi mdi-whatsapp" aria-label='icone whatsapp'></i>
                                 <h3>WhatsApp</h3>
                                 <p>(11) 96738-1402</p>
                             </a>
                         </div>
                         <div>
                             <a href="mailto:viercatech@gmail.com">
-                                <i className="mdi mdi-email"></i>
+                                <i className="mdi mdi-email" aria-label='icone e-mail'></i>
                                 <h3>E-mail</h3>
                                 <p>viercatech@gmail.com</p>
                             </a>
                         </div>
                         <div>
-                            <i className="mdi mdi-at"></i>
+                            <i className="mdi mdi-at" aria-label='icone redes sociais'></i>
                             <h3>Redes sociais</h3>
                             <ul>
-                                <li><i className="mdi mdi-instagram"></i></li>
-                                <li><a href="https://www.linkedin.com/company/106129417/" target="_blank" rel="noopener noreferrer"><i className="mdi mdi-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/viercatech_" target='_blank' rel='noopener noreferrer'><i className="mdi mdi-instagram" aria-label='icone instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/106129417/" target="_blank" rel="noopener noreferrer"><i className="mdi mdi-linkedin" aria-label='icone linkedin'></i></a></li>
                             </ul>
                         </div>
                     </div>

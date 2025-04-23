@@ -1,5 +1,5 @@
 import '../index.css';
-import imgHeader from '../assets/img/VierCa-Tech-logo.png';
+import imgHeader from '../assets/img/VierCa-Tech-logo.webp';
 import { useLayoutEffect , useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -43,7 +43,7 @@ const Header = () =>{
             <div className="nav-fixed">
                 <nav>
                     <div className="logo-nav">
-                        <img src={imgHeader} alt="Logo LVC Agência - Header" title="Logo LVC Agência" />
+                        <img src={imgHeader} alt="Logo VierCa Tech - Header" title="Logo VierCa Tech" />
                     </div>         
 
                     <div className="bar-nav">
