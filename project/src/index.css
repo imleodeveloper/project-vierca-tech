@@ -495,7 +495,7 @@ header nav .bar-nav ul li .link-nav:hover::after{
   font-size: 3rem;
   color: #1e90ff;
 }
-.info-about .item-about h4{
+.info-about .item-about p{
   width: 100%;
   height: auto;
   display: flex;
@@ -1303,7 +1303,7 @@ footer .footer-container .footer-rights small{
   width: 50%;
   height: 30px;
   border: none;
-  background: #1e90ff;
+  background: #1168be;
   color: #fff;
   font-weight: bold;
   font-size: 1rem;

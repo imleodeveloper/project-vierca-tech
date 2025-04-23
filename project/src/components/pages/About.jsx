@@ -93,15 +93,15 @@ const About = () => {
                         
                         <div className="item-about">
                             <span>3+</span>
-                            <h4>Clientes satisfeitos</h4>
+                            <p>Clientes satisfeitos</p>
                         </div>
                         <div className="item-about">
                             <span>1</span>
-                            <h4>Tempo no mercado (ano)</h4>
+                            <p>Tempo no mercado (ano)</p>
                         </div>
                         <div className="item-about">
                             <span>3+</span>
-                            <h4>Projetos realizados</h4>
+                            <p>Projetos realizados</p>
                         </div>
 
                     </div>

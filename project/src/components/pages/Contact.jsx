@@ -174,14 +174,22 @@ const Contact = () => {
                     </div>
                     <div className="info-contact">
                         <div>
-                            <a href="https://api.whatsapp.com/send/?phone=5511967381402&text=Ol%C3%A1%20VierCa%20Tech,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                            <a 
+                                href="https://api.whatsapp.com/send/?phone=5511967381402&text=Ol%C3%A1%20VierCa%20Tech,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre&type=phone_number&app_absent=0" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                aria-label="Enviar e-mail para a VierCa Tech"
+                            >
                                 <i className="mdi mdi-whatsapp"></i>
                                 <h3>WhatsApp</h3>
                                 <p>(11) 96738-1402</p>
                             </a>
                         </div>
                         <div>
-                            <a href="mailto:viercatech@gmail.com">
+                            <a 
+                                href="mailto:viercatech@gmail.com"
+                                aria-label="Conversar com a VierCa Tech no WhatsApp"
+                            >
                                 <i className="mdi mdi-email"></i>
                                 <h3>E-mail</h3>
                                 <p>viercatech@gmail.com</p>
