@@ -17,6 +17,9 @@ const Privacidade = () =>{
         localStorage.setItem("privacidade_aceita", "true");
         setButtonClose(false);
     }
+    const closePolicy = () => {
+        setButtonClose(false);
+    }
 
     return(
 
@@ -27,8 +30,13 @@ const Privacidade = () =>{
                         <button onClick={acceptPolicy}>Aceitar</button>
                         <p>Ao aceitar você concorda com nossa política.</p>
                     </div>
+                    <div className="noaccept-privacy">
+                        <button onClick={closePolicy}>
+                            X
+                        </button>
+                    </div>
                     <section>
-                        <img src={logo} alt="Logo banner de privacidade - VierCa Tech" title="Assistência técnica e Webdesign na Vila Zilda" />
+                        <img src={logo} alt="Logo banner de privacidade - VierCa Tech" title="Desenvolvimento de sites e sistemas na Vila Zilda" />
                         <h2>Política de Privacidade</h2>
                         <p>A sua privacidade é importante para nós. É política do <strong>VierCa Tech</strong> respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <strong>VierCa Tech</strong> e outros sites que possuímos e operamos.</p>
 

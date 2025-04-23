@@ -1258,6 +1258,35 @@ footer .footer-container .footer-rights small{
   top: 50px;
   z-index: 1000;
 }
+.article-privacy .noaccept-privacy{
+  width: 30%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.article-privacy .noaccept-privacy button{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: red;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+.article-privacy .noaccept-privacy button:hover{
+  background: #9c0000;
+  color: #000000;
+}
 .article-privacy .button-close-privacy{
   position: absolute;
   top: 10px;
