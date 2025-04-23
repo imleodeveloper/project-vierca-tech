@@ -78,14 +78,22 @@ const Header = () =>{
                 <div className="info-nav">
                     <div className="div-info-nav">
                         <ul>
-                            <li><i className="mdi mdi-email"></i><a href="mailto:viercatech@gmail.com">viercatech@gmail.com</a></li>
-                            <li><i className="mdi mdi-phone-classic"></i><a href="tel:+5511967381402" target="_blank" rel="noopener noreferrer">(11) 96738-1402</a></li>
+                            <li><i className="mdi mdi-email"></i><a href="mailto:viercatech@gmail.com" aria-label='E-mail de contato VierCa Tech'>viercatech@gmail.com</a></li>
+                            <li><i className="mdi mdi-phone-classic"></i><a href="tel:+5511967381402" target="_blank" rel="noopener noreferrer" aria-label='Contato telefônico VierCa Tech'>(11) 96738-1402</a></li>
                         </ul>
                     </div>
                     <div className="social-info-nav">
                         <ul>
-                            <li><a href="https://www.linkedin.com/company/106129417/" target="_blank" rel="noopener noreferrer"><i className="mdi mdi-linkedin"></i></a></li>
-                            <li><a href="https://api.whatsapp.com/send/?phone=5511967381402&text=Ol%C3%A1%20VierCa%20Tech,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><i className="mdi mdi-whatsapp"></i></a></li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/106129417/" target="_blank" rel="noopener noreferrer" aria-label="Acessar o LinkedIn da VierCa Tech">
+                                    <i className="mdi mdi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send/?phone=5511967381402&text=Ol%C3%A1%20VierCa%20Tech,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" aria-label="Mandar mensagem via WhatsApp">
+                                    <i className="mdi mdi-whatsapp"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

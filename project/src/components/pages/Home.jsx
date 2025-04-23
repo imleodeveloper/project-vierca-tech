@@ -133,7 +133,7 @@ const Home = () =>{
                             </div>
                         ))}
                         <div className="button-slide-home">
-                            <button onClick={nextSlide} className="next-slide"><i className="mdi mdi-menu-right"></i></button>
+                            <button onClick={nextSlide} className="next-slide" aria-label="button for next image"><i className="mdi mdi-menu-right"></i></button>
                         </div>
 
                     </div>
