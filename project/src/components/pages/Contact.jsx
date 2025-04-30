@@ -199,7 +199,7 @@ const Contact = () => {
                             <i className="mdi mdi-at"></i>
                             <h3>Redes sociais</h3>
                             <ul>
-                                <li><a href="https://www.instagram.com/viercatech_" target='_blank' rel='noopener noreferrer' aria-label='Acesse o Instagram da VierCa Tech'><i className="mdi mdi-instagram"></i></a></li>
+                                <li><a href="https://www.instagram.com/viercatech" target='_blank' rel='noopener noreferrer' aria-label='Acesse o Instagram da VierCa Tech'><i className="mdi mdi-instagram"></i></a></li>
                                 <li><a href="https://www.linkedin.com/company/106129417/" target="_blank" rel="noopener noreferrer" aria-label='Acesse o LinkedIn da VierCa Tech'><i className="mdi mdi-linkedin"></i></a></li>
                             </ul>
                         </div>
