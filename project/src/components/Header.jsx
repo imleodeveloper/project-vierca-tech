@@ -66,7 +66,7 @@ const Header = () =>{
                             </li>                   
                         
                             <li>
-                                <a href="#nav-clients" className="link-nav" onClick={closeMenu}>Clientes</a>
+                                <a href="#nav-projects" className="link-nav" onClick={closeMenu}>Clientes</a>
                             </li>                
                         
                             <li>

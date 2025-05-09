@@ -8,6 +8,7 @@ import Clients from "./components/pages/Clients";
 import Services from "./components/pages/Services";
 import Contact from "./components/pages/Contact";
 import Privacidade from "./components/pages/Privacidade";
+import Projects from "./components/pages/Projects";
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
           <Home />
           <About />
           <Services />
-          <Clients />
+          <Projects />
+          {/*<Clients /> */}
           <Contact />
           <Privacidade />
         </main>

@@ -29,10 +29,10 @@ const Clients = () => {
         },
         {
             id: 3,
-            titulo: 'Em desenvolvimento',
+            titulo: 'Guia para LVC Agência',
             img: imgLVC,
-            site: '#nav-clients',
-            target: '',
+            site: 'https://planejamento-e-habitos-para-vencer.netlify.app',
+            target: '_blank',
         },
         {
             id: 4,

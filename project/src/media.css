@@ -104,6 +104,27 @@
         /* PÁGINA SERVICES */
 
 
+        /* PÁGINA PROJECTS */
+        .article-projects section .content-projects .item-project{
+            width: 90%;
+        }
+        .article-projects .project-expanded .container-item{
+            padding-top: 70px;
+        }
+        .article-projects .project-expanded .container-item .header-item h2{
+            font-size: 1.7rem;
+        }
+        .article-projects .project-expanded .container-item .content-item{
+            flex-direction: column;
+            align-items: center;
+        }
+        .article-projects .project-expanded .container-item .content-item .img-project{
+            width: 100%;
+        }
+        .article-projects .project-expanded .container-item .content-item .text-project{
+            width: 90%;
+        }
+        /* PÁGINA PROJECTS */
         /* PÁGINA CLIENTS */
         .article-clients{
             height: auto;
@@ -325,6 +346,12 @@
 
         /* CLIENTS */
 
+        /* PROJECTS */
+        .article-projects section .content-projects .item-project{
+            width: 90%;
+        }
+        /* PROJECTS */
+
         /* CONTACT */
         .article-contact{
             height: auto;
@@ -479,6 +506,11 @@
             width: 30%;
         }
         /* CONTACT */
+        /* CLIENTS */
+        .article-projects section .content-projects .item-project{
+            width: 30%;
+        }
+        /* CLIENTS */
 
         /* FOOTER */
         footer .footer-container{
@@ -511,6 +543,7 @@
         }
         /* PRIVACIDADE */
     }
+
     @media (min-width: 1560px){
         /* HEADER */
         header{
@@ -568,6 +601,10 @@
             font-size: 3.5rem;
         }
         /* CLIENTS */
+
+        .article-projects section .title-projects h2{
+            font-size: 3.5rem;
+        }
 
         /* CONTACT */
         .article-contact section .title-contact h2{
@@ -633,6 +670,36 @@
             font-size: 4rem;
         }
         /* CLIENTS */
+        
+        /* PROJECTS */
+        .article-projects section{
+            max-width: 2160px;
+        }
+        .article-projects section .title-projects h2{
+            font-size: 4rem;
+        }
+        .article-projects section .content-projects .item-project h3{
+            font-size: 2rem;
+        }
+        .article-projects section .content-projects .item-project span{
+            font-size: 3rem;
+        }
+        .article-projects section .content-projects .item-project .description p,
+        .article-projects section .content-projects .item-project .description button{
+            font-size: 1rem;
+        }
+
+
+        .article-projects .project-expanded .container-item .header-item h2{
+            font-size: 2.75rem;
+        }
+        .article-projects .project-expanded .container-item .text-project h3{
+            font-size: 1.5rem;
+        }
+        .article-projects .project-expanded .container-item .text-project p{
+            font-size: 1.15rem;
+        }
+        /* PROJECTS */
 
         /* CONTACT */
         .article-contact section .title-contact h2{
