@@ -2,6 +2,9 @@ import '../../index.css';
 import ImgMeca from '../../assets/img/clients/site-meca.webp';
 import ImgAlli from '../../assets/img/clients/site-alli.webp';
 import ImgLeo from '../../assets/img/clients/site-leonardo.webp';
+import ImgLustra from '../../assets/img/clients/site-lustra.webp';
+import ImgRX from '../../assets/img/clients/site-rx.webp';
+import ImgLVC from '../../assets/img/clients/site-lvc.webp';
 import { useLayoutEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { gsap } from 'gsap';
@@ -16,7 +19,7 @@ const Home = () =>{
             img: ImgAlli,
             title: " Cliente - ALLI Contabilidade ",
             alt: " Segunda foto slider - Cliente ALLI Contabilidade",
-            link: "https://alli-contabilidade.netlify.app/",
+            link: "https://www.allicontabilidade.com.br/",
         },
         {
             id: 2,
@@ -31,6 +34,27 @@ const Home = () =>{
             title: " Portfólio - Leonardo Vieira ",
             alt: " Terceira foto slider - Portfólio de Leonardo",
             link: "https://leonardovieira.netlify.app/",
+        },
+        {
+            id: 4,
+            img: ImgLVC,
+            title: " eBook - Agência LVC ",
+            alt: " Quarta foto slider - eBook para Agência LVC",
+            link: "https://planejamento-e-habitos-para-vencer.netlify.app/",
+        },
+        {
+            id: 5,
+            img: ImgLustra,
+            title: " Landing Page - Lustra Ômega ",
+            alt: " Quinta foto slider - Landing Page Lustra Ômega",
+            link: "https://www.lustraomega.com.br/",
+        },
+        {
+            id: 6,
+            img: ImgRX,
+            title: " Site - RX Consultoria ",
+            alt: " Sexta foto slider - Site para RX Consultoria",
+            link: "https://rxconsultoria.com.br/",
         },
     ];
 
@@ -74,7 +98,7 @@ const Home = () =>{
                 <meta name="description" content="A Vierca Tech oferece soluções completas em desenvolvimento web, suporte e assistência técnica." />
                 <meta name="keywords" content="e-commerce, loja virtual, landing page, desenvolvedor frontend, desenvolvedor, sistemas web, SEO, marketing digital,front-end, desenvolvimento web, criação de sites, sistemas personalizados, vierca tech, viercatech, assistência técnica, suporte técnico, técnico de informática, manutenção, notebook, computador, manutenção de computador, manutenção de notebook, VierCa Tech" />
                 <meta name="robots" content="index, follow" />
-                <meta name="author" content="Vierca Tech" />
+                <meta name="author" content="VierCa Tech" />
 
                 <meta property="og:title" content="VierCa Tech - Desenvolvimento Web e Assistência técnica" />
                 <meta property="og:description" content="Desenvolvemos sites, auxiliamos com manutenção de computadores e notebooks."/>

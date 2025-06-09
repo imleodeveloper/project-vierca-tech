@@ -1,5 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-
+import imgAlli from '/src/assets/img/clients/site-alli-project.webp';
+import imgMeca from '/src/assets/img/clients/site-meca-project.webp';
+import imgLustra from '/src/assets/img/clients/site-lustra-project.webp';
+import imgRX from '/src/assets/img/clients/site-rx-project.webp';
+import imgLVC from '/src/assets/img/clients/site-lvc-project.webp';
+import imgFabioSContabilidade from '/src/assets/img/clients/fabio-silva-contabilidade.webp';
+import imgEunivida from '/src/assets/img/clients/eunivida.webp';
 
 const Projects = () => {
 
@@ -9,7 +15,7 @@ const Projects = () => {
         {
             id: 1,
             cliente: "ALLI Contabilidade",
-            img: "/src/assets/img/clients/site-alli-project.webp",
+            img: imgAlli,
             titleImg: "Projeto para ALLI Contabilidade",
             alt: "Foto Home Page da ALLI Contabilidade",
             info1: `Landing Page desenvolvido para a abertura da empresa ALLI Contabilidade.`,
@@ -25,7 +31,7 @@ const Projects = () => {
         {
             id: 2,
             cliente: "Meca Importações",
-            img: "/src/assets/img/clients/site-meca-project.webp",
+            img: imgMeca,
             titleImg: "Projeto para Meca Importações",
             alt: "Foto Home Page da Meca Importações",
             info1: `Landing Page desenvolvido para empresa Meca Importações.`,
@@ -41,7 +47,7 @@ const Projects = () => {
         {
             id: 3,
             cliente: "RX Consultoria",
-            img: "/src/assets/img/clients/site-rx-project.webp",
+            img: imgRX,
             titleImg: "Projeto para RX Consultoria",
             alt: "Foto Home Page da RX Consultoria",
             info1: `Landing Page desenvolvido para empresa RX Consultoria.`,
@@ -54,7 +60,7 @@ const Projects = () => {
         {
             id: 4,
             cliente: "Lustra Ômega",
-            img: "/src/assets/img/clients/site-lustra-project.webp",
+            img: imgLustra,
             titleImg: "Projeto para Lustra Ômega",
             alt: "Foto Home Page da Lustra Ômega",
             info1: `Landing Page desenvolvido para empresa Lustra Ômega.`,
@@ -69,12 +75,40 @@ const Projects = () => {
         {
             id: 5,
             cliente: "LVC Agência",
-            img: "/src/assets/img/clients/site-lvc-project.webp",
+            img: imgLVC,
             titleImg: "Projeto de Ebook para LVC Agência",
             alt: "Foto Home Page do Ebook para LVC Agência",
             info1: `Landing Page de Ebook desenvolvido para empresa LVC Agência.`,
             info2: "01 de Maio de 2025",
             site: "https://planejamento-e-habitos-para-vencer.netlify.app",
+            nameSite: "Acesse o site aqui!",
+            stacks: "HTML5, CSS3, JavaScript",
+            HTML5: "mdi mdi-language-html5",
+            CSS3: "mdi mdi-language-css3",
+            JS: "mdi mdi-language-javascript"
+        },
+        {
+            id: 6,
+            cliente: "Eunivida",
+            img: imgEunivida,
+            titleImg: "Projeto de Landing Page para EUNIVIDA",
+            alt: "Foto Home Page da EUNIVIDA",
+            info1: `Landing Page para a empresa EUNIVIDA, focada em dermatologia.`,
+            info2: "Em desenvolvimento",
+            site: "https://www.eunivida.com.br/",
+            nameSite: "Acesse o site aqui!",
+            stacks: "Desenvolvido via plataforma WIX.",
+            XML: "mdi mdi-xml"
+        },
+        {
+            id: 7,
+            cliente: "Fábio Silva Contabilidade",
+            img: imgFabioSContabilidade,
+            titleImg: "Projeto de site institucional para Fábio Silva Contabilidade",
+            alt: "Foto Home Page da Fábio Silva Contabilidade",
+            info1: `Desenvolvimento de site focado em gerar tráfego orgânico, com foco em SEO.`,
+            info2: "Em desenvolvimento",
+            site: "https://www.fabiosilvacontabilidade.com.br",
             nameSite: "Acesse o site aqui!",
             stacks: "HTML5, CSS3, JavaScript",
             HTML5: "mdi mdi-language-html5",

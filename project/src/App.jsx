@@ -9,6 +9,7 @@ import Services from "./components/pages/Services";
 import Contact from "./components/pages/Contact";
 import Privacidade from "./components/pages/Privacidade";
 import Projects from "./components/pages/Projects";
+import ChatBot from "./components/ChatBot";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Contact />
           <Privacidade />
         </main>
+          <ChatBot />
       <Footer />
     </>
   )

@@ -1,0 +1,15 @@
+[functions]
+    directory = "netlify/functions"
+
+[build]
+    publish = "dist"          # pasta onde o React gera o build (npm run build)
+    functions = "netlify/functions"   # pasta das funções
+
+[dev]
+    functions = "netlify/functions"   # para netlify dev local
+
+    
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

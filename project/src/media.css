@@ -212,6 +212,24 @@
         }
         /* PRIVACIDADE */
 
+        /* CHAT BOT */
+        .baloon-chat{
+            max-width: unset;
+            width: 95%;
+            bottom: 20px;
+            right: 0px;
+            left: 0px;
+            margin: 0 auto;
+        }
+        .baloon-chat .chat-bot{
+            width: 100%;
+            height: 375px;
+        }
+        .baloon-chat .chat-bot .send-chat .input-group{
+            width: 100%;
+        }
+        /* CHAT BOT */
+
 
     }
     @media (min-width: 640px){        
@@ -225,6 +243,20 @@
 
         .content-clients .slide-clients .item-slide .img-slide{
             width: 40%;
+        }
+
+        .baloon-chat{
+            width: 400px;
+            bottom: 50px;
+            right: 20px;
+            left: unset;
+            margin: unset;
+        }
+        .baloon-chat .chat-bot{
+            width: 100%;
+        }
+        .baloon-chat .chat-bot .send-chat .input-group{
+            width: 96%;
         }
     }
     @media (max-width: 1024px){
@@ -404,6 +436,19 @@
             align-items: start;
         }
         /* PRIVACIDADE */
+
+        /*CHAT BOT */
+        .baloon-chat{
+            bottom: 10px;
+        }
+        .baloon-chat .chat-bot{
+            min-height: 300px;
+            max-height: 375px;
+        }
+        .baloon-chat .chat-bot .send-chat .input-group{
+            width: 100%;
+        }
+        /*CHAT BOT */
     }
 
     @media (min-width: 1280px){
@@ -542,6 +587,19 @@
             align-items: center;
         }
         /* PRIVACIDADE */
+
+        /*CHAT BOT */
+        .baloon-chat{
+            bottom: 20px;
+        }
+        .baloon-chat .chat-bot{
+            min-height: 300px;
+            max-height: 500px;
+        }
+        .baloon-chat .chat-bot .send-chat .input-group{
+            width: 95.5%;
+        }
+        /*CHAT BOT */
     }
 
     @media (min-width: 1560px){
@@ -611,6 +669,19 @@
             font-size: 3.5rem;
         }
         /* CONTACT */
+
+        /*CHAT BOT */
+        .baloon-chat{
+            bottom: 50px;
+        }
+        .baloon-chat .chat-bot{
+            min-height: 300px;
+            max-height: 700px;
+        }
+        .baloon-chat .chat-bot .send-chat .input-group{
+            width: 96%;
+        }
+        /*CHAT BOT */
     }
     @media (min-width: 1920px){
         /* HEADER */
@@ -706,5 +777,37 @@
             font-size: 4rem;
         }
         /* CONTACT */
+
+        
+        /*CHAT BOT */
+        .baloon-chat{
+            bottom: 50px;
+        }
+        .baloon-chat .chat-bot .header-chat p{
+            font-size: 1.4rem;
+        }
+        .baloon-chat .chat-bot .header-chat span i{
+            font-size: 2rem;
+        }
+        .baloon-chat .chat-bot .conversation-chat .presentation-vierchat span,
+        .baloon-chat .chat-bot .conversation-chat .ia-and-user-chat .ia-response span{
+            width: 65px;
+            height: 65px;
+        }
+        .baloon-chat .chat-bot .conversation-chat .presentation-vierchat .msg-default-ia{
+            font-size: 1.1rem;
+        }
+        .baloon-chat .chat-bot .conversation-chat .FAQ p{
+            font-size: 1rem;
+        }
+        .baloon-chat .chat-bot .conversation-chat .FAQ .chatbot-questions,
+        .baloon-chat .chat-bot .send-chat .input-group input    {
+            font-size: 1rem;
+        }
+        .baloon-chat .chat-bot .conversation-chat .ia-and-user-chat .user-questions p,
+        .baloon-chat .chat-bot .conversation-chat .ia-and-user-chat .ia-response p{
+            font-size: 1.05rem;
+        }
+        /*CHAT BOT */
     }
 }
